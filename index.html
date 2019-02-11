@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Crystal Adventure</title>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Crystals Collector</h1>
+    </header>
+
+    <section>
+      <p>You will be given a random number at the start of the game</p>
+      <p>There are four elements below. By clicking on an element you will add a specific amount of points to your total score</p>
+      <p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number</p>
+      <p>The value of each element is hidden from you until you click on it</p>
+      <p>Each time when the game starts, the game will change the values of each element</p>
+    </section>
+
+
+
+    <div id="randomnumber-and-scoreboard">
+      <div id="random-number-generator">
+        <span id="random-number"></span>
+      </div>
+
+      <div id="score-board">
+        <span id="win-or-lose"></span>
+        <p>Wins: <span id="win-counter">0</span></p>
+        <p>Losses: <span id="loss-counter">0</span></p>
+      </div>
+    </div>
+
+    <div id="crystals">
+      <img id="diamond" src="./assets/images/crystal1.jpg" alt="diamond-pic">
+      <img id="sapphire" src="./assets/images/crystal2.jpg" alt="sapphire-pic">
+      <img id="ruby" src="./assets/images/crystal3.jpg" alt="ruby-pic">
+      <img id="pearl" src="./assets/images/crystal4.jpg" alt="pearl-pic">
+    </div>
+
+    <div id="current-score">
+      <h1>Your total score is:</h1>
+      <span id="current-score-counter"></span>
+    </div>
+  </div>
+  
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./assets/javascript/game.js"></script>
+
+</body>
+</html>
+
